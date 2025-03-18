@@ -3,7 +3,7 @@ export async function GET() {
     "https://kr.api.riotgames.com/lol/platform/v3/champion-rotations",
     {
       headers: {
-        "X-Riot-Token": "RGAPI-421e5bea-7fac-4f30-8dd9-bb606a4decdd",
+        "X-Riot-Token": `${process.env.NEXT_PUBILC_RIOT_API_KEY}`,
       },
     }
   );
