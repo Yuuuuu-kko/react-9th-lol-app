@@ -4,7 +4,6 @@ import { Champion } from "@/types/Champion";
 import { useQuery } from "@tanstack/react-query";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
 
 // ChampionRotation - CSR fetchRotation
 
@@ -63,11 +62,8 @@ const ChampionRotation = () => {
 
       <div className="grid grid-cols-4 gap-6">
         {weekCampion.map((champ) => (
-          <Link href={`/champions/${champ.id}`}>
-            <div
-              key={champ.id}
-              className="border border-gray-500 p-4 rounded-md text-center hover:border-red-500 transition"
-            >
+          <Link key={champ.id} href={`/champions/${champ.id}`}>
+            <div className="border border-gray-500 p-4 rounded-md text-center hover:border-red-500 transition">
               <Image
                 src={`https://ddragon.leagueoflegends.com/cdn/15.5.1/img/champion/${champ.image.full}`}
                 height={100}
