@@ -16,7 +16,7 @@ const ChampionRotation = () => {
   } = useQuery({
     queryKey: ["RotaionChampion"],
     queryFn: async () => {
-      const res = await fetch("http://localhost:3000/api/rotationChamp");
+      const res = await fetch("/api/rotationChamp");
       const data: number[] = await res.json();
       return data;
     },
