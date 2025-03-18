@@ -18,7 +18,6 @@ const page = async () => {
     <div className="bg-black min-h-screen text-white p-10">
       <h1 className="text-3xl font-bold text-red-500 mb-6">챔피언 목록</h1>
 
-      {/* 챔피언 목록을 그리드로 정렬 */}
       <div className="grid grid-cols-4 gap-6">
         {championData.map((champ) => (
           <div
