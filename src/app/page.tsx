@@ -3,6 +3,7 @@ import lol1 from "../pubilc/1.jpg";
 import lol2 from "../pubilc/2.jpg";
 import lol3 from "../pubilc/3.jpg";
 import Link from "next/link";
+
 // 아래 return에서 메인으로 감싸는거 맞음?? 질문!
 export default function Home() {
   return (

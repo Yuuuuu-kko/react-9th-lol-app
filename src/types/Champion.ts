@@ -50,3 +50,20 @@ type ChampionStats = {
   attackspeedperlevel: number;
   attackspeed: number;
 };
+
+export type ChampionDetail = {
+  id: string;
+  key: string;
+  name: string;
+  title: string;
+  blurb: string;
+  image: ChampionImg;
+  spells: ChampionSpells[];
+};
+
+export type ChampionSpells = {
+  id: string;
+  name: string;
+  description: string;
+  image: ChampionImg;
+};
