@@ -12,8 +12,3 @@ export interface Item {
   };
   gold: { base: number; purchasable: boolean; total: number; sell: number };
 }
-// 작은 사진
-// 템 이름
-// 템 설명
-// 구매가
-// 판매가
