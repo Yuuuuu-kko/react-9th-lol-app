@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Link from "next/link";
 import Provider from "./provider";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,10 +21,11 @@ export default function RootLayout({
             <Link href="/items">Item List</Link>
             <Link href="/rotation">Champion Rotation</Link>
           </nav>
-          <Provider>{children}</Provider>
         </header>
 
-        <main className="flex-1 pt-[70px] pb-[50px]">{children}</main>
+        <main className="flex-1 pt-[70px] pb-[50px]">
+          <Provider>{children}</Provider>
+        </main>
         <footer className="bg-gray-900 p-4 w-full mt-auto">
           <div className="container mx-auto text-center text-gray-400 text-sm">
             [Your Product Name] is not endorsed by Riot Games and does not

@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 
 // ItemList - SSG
-const page = async () => {
+const ItemListPage = async () => {
   const response = await fetch(
     "https://ddragon.leagueoflegends.com/cdn/15.5.1/data/ko_KR/item.json",
     {
@@ -43,4 +43,4 @@ const page = async () => {
   );
 };
 
-export default page;
+export default ItemListPage;

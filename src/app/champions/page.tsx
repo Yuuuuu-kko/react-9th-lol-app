@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const page = async () => {
+const ChampionListPage = async () => {
   const response = await fetch(
     "https://ddragon.leagueoflegends.com/cdn/15.5.1/data/ko_KR/champion.json",
     {
@@ -43,4 +43,4 @@ const page = async () => {
   );
 };
 
-export default page;
+export default ChampionListPage;
