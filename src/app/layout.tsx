@@ -1,18 +1,6 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import Link from "next/link";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,21 +9,30 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <nav>
-          <Link href={"/"}>Home</Link>
-          <Link href={"/champions"}>참피온</Link>
-          <Link href={"/items"}>Item</Link>
-          <Link href={"/rotation"}>Rotation</Link>
-        </nav>
-        {children}
+      <body className="bg-black text-white flex flex-col min-h-screen">
+        <header className="bg-gray-900 text-white py-4 fixed top-0 w-full z-10 border-b border-gray-700">
+          <nav className="container mx-auto flex justify-around">
+            <Link href="/">HOME</Link>
+            <Link href="/champions">Campion List</Link>
+            <Link href="/items">Item List</Link>
+            <Link href="/rotation">Campion Rotation</Link>
+          </nav>
+        </header>
+
+        <main className="flex-1 pt-[70px] pb-[50px]">{children}</main>
+
+        <footer className="bg-gray-900 p-4 w-full mt-auto">
+          <div className="container mx-auto text-center text-gray-400 text-sm">
+            [Your Product Name] is not endorsed by Riot Games and does not
+            reflect the views or opinions of Riot Games or anyone officially
+            involved in producing or managing Riot Games properties. Riot Games
+            and all associated properties are trademarks or registered
+            trademarks of Riot Games, Inc.
+          </div>
+        </footer>
       </body>
     </html>
   );

@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+
 // 강의 3-5볼것
 const nextConfig = {
   images: {
