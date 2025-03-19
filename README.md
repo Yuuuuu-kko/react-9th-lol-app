@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+![GIFMaker_me](https://github.com/user-attachments/assets/93f294ff-28b2-45bd-9cbc-e4d82845fef6)
 
-## Getting Started
+💻 구현기능
 
-First, run the development server:
+✅ 챔피언 목록 및 상세 페이지
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+리그 오브 레전드의 모든 캐릭터 확인
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+사용자가 선택한 챔피언에 대한 스킬 및 상세정보 표시
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+✅ 챔피언 로테이션 페이지
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+무료로 플레이 가능한 챔피언 목록 확인
 
-## Learn More
+✅ 아이템 목록 페이지
 
-To learn more about Next.js, take a look at the following resources:
+리그 오브 레전드 아이템 목록 확인
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✅ 반응형 디자인 및 UI개선
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+⚽트러블 슈팅 or TIL
+https://yuuuuukko.tistory.com/147
